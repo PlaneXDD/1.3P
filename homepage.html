@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+    <div id="app">
+        <header class="centered-header">
+            <h1 class="rainbow-text">Portfolio</h1>
+            <p>A Developer's Journey</p>
+        </header>
+        <nav>
+            <router-link to="/home">Home</router-link>
+            <router-link to="/milestones">Milestones</router-link>
+            <router-link to="/skills">Skills Acquired</router-link>
+            <router-link to="/projects">Projects & Tasks</router-link>
+            <router-link to="/feedback">Feedback & Suggestions</router-link>
+            <router-link to="/contact">Contact</router-link>
+        </nav>
+        <router-view></router-view>
+        <button id="backToTop" @click="backToTop">Back to Top</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="scripts.js" defer></script>
+    <section id="skills" class="skills-grid" :style="{ '--numColumns': numColumns }">
+        <div>Web Developer:Thien Phu Pham</div>
+    </section>
+    
+    
+</body>
+</html>

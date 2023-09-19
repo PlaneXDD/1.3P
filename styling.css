@@ -1,0 +1,116 @@
+/* Update background color and text color */
+body 
+{
+    background-color: #f0f0f0; /* Change to your preferred background color */
+    color: #333; /* Change to your preferred text color */
+    font-family: 'Arial', sans-serif; /* Change to your preferred font family */
+}
+
+nav 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #555;
+  padding: 0.5em 0;
+}
+
+nav a 
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav a:hover 
+{
+  background-color: #555;
+}
+
+section 
+{
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 
+{
+  font-family: 'Your Custom Font', sans-serif; /* Change to your preferred custom font */
+  color: #007BFF; /* Change heading text color */
+}
+input[type="text"], textarea 
+{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+#backToTop 
+{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) 
+{
+  nav 
+  {
+      flex-direction: column;
+  }
+  section 
+  {
+      width: 100%;
+      padding: 0.5em;
+  }
+}
+.centered-header 
+{
+  text-align: center;
+  padding: 2em 0; 
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px; 
+}
+
+/* Style individual skill items */
+.skills-grid div {
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-weight: bold; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+.rainbow-text 
+{
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { color: rgb(255, 0, 0); } 
+  20% { color: rgb(255, 165, 0); } 
+  40% { color: rgb(255, 255, 0); } 
+  60% { color: rgb(0, 128, 0); } 
+  80% { color: rgb(0, 0, 255); } 
+  100% { color: rgb(128, 0, 128); } 
+}
+
+
+
+
